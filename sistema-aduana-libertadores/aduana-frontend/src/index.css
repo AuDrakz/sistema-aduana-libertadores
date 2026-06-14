@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { font-family: 'Inter', system-ui, sans-serif; }
+  body { @apply bg-aduana_gris-light text-aduana-900 antialiased; }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-aduana_gris-light; }
+  ::-webkit-scrollbar-thumb { @apply bg-aduana-300 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-aduana-500; }
+}
+
+@layer utilities {
+  .animate-spin { animation: spin 0.8s linear infinite; }
+}
